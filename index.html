@@ -121,14 +121,14 @@
     justify-content: center;
   }
 
-  .section-heading {
+  .section-2  .section-heading {
     font-size: 2rem;
     text-align: center;
     font-family: 'Brush Script MT', cursive;
     margin-bottom: 30px;
   }
 
-  .section-2-content {
+  .section-2 .section-2-content {
     display: flex;
     align-items: right;
     justify-content: space-between;
@@ -138,34 +138,36 @@
     margin: 0 auto; /* Center horizontally */
   }
 
-  .cookie-img {
+  .section-2 .cookie-img {
     max-width: 45%;
-    height: left;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     object-fit: cover; /* Ensures image fills container nicely */
+    order: -1; /* Forces image to appear first (left) */
+
   }
 
-  .cookie-text {
+  .section-2 .cookie-text {
     max-width: 45%;
     font-family: Georgia, serif;
     color: #333;
   }
 
-  .cookie-text h3 {
+  .section-2 .cookie-text h3 {
     font-family: 'Brush Script MT', cursive;
     font-size: 2rem;
     margin-bottom: 5px;
   }
 
-  .cookie-text hr {
+  .section-2 .cookie-text hr {
     border: none;
     border-top: 2px solid #444;
     width: 80%;
     margin: 10px 0;
   }
 
-  .cookie-text p {
+  .section-2 .cookie-text p {
     font-size: 0.95rem;
     line-height: 1.6;
   }
