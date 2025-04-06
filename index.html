@@ -130,21 +130,22 @@
 
   .section-2-content {
     display: flex;
-    align-items: center;   /* Vertically centers items */
-    justify-content: center; /* Centers items horizontally */
-    gap: 60px;             /* Space between image and text */
-    max-width: 1200px;     /* Prevents overly wide layouts */
-    margin: 0 auto;        /* Centers container */
+    align-items: center;
+    justify-content: center; /* Centers items */
+    gap: 60px;
+    max-width: 900px;       /* Constrains total width */
+    margin: 0 auto;         /* Centers container */
     padding: 20px;
+    overflow: hidden;       /* Clips anything that overflows */
   }
 
   .section-2 .cookie-img {
-    width: 100%;       /* Responsive width (respects max-width) */
-    max-width: 400px;  /* Limits maximum size */
-    height: auto;      /* Maintains aspect ratio */
+    width: 150px;          /* Fixed width */
+    height: 150px;        /* Fixed height (square) - adjust as needed */
+    object-fit: cover;     /* Covers area without stretching */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    object-fit: cover; /* Prevents distortion */
+    flex-shrink: 0;       /* Prevents shrinking in flexbox */
   }
 
   .section-2 .cookie-text {
