@@ -13,7 +13,6 @@
       margin: 0;
       padding: 0;
       min-height: 400vh; /* 👈 This adds vertical height */
-
     }
 
     header {
@@ -21,11 +20,29 @@
       padding: 30px 20px 10px;
       position: relative;
     }
+    .left-text-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
 
+
+    
+    .left-text-button:hover {
+      color: #555;
+    }
     .top-nav {
       position: absolute;
       top: 20px;
       right: 20px;
+      left: 120px; /* Creates space for left button */
+
     }
 
     .top-nav a {
@@ -117,6 +134,7 @@
       <a href="shop.html">Shop</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
+      <a href="contact.html">SweettoBox</a>
     </nav>
     <div class="subtext">home bakery</div>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Bow_font_awesome.svg/1200px-Bow_font_awesome.svg.png" alt="bow icon" width="50" />
