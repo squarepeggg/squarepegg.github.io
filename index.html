@@ -12,43 +12,20 @@
       text-align: center;
       margin: 0;
       padding: 0;
-      min-height: 400vh; /* 👈 This adds vertical height */
+      min-height: 400vh;
     }
 
     header {
-      background: linear-gradient(to bottom, #e0ddd8,#f5f3f0; );
+      background: linear-gradient(to bottom, #e0ddd8, #f5f3f0);
       padding: 30px 20px 10px;
       position: relative;
     }
-    .left-text-button {
+
+    .top-nav {
       position: absolute;
       top: 20px;
       left: 20px;
-      font-family: 'Brush Script MT', cursive;
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #000;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-
-    
-    .left-text-button:hover {
-      color: #555;
-    }
-    .top-nav {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-align: left;
-    }
-
-    .top-left{
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      
+      text-align: left;
     }
 
     .top-nav a {
@@ -56,12 +33,28 @@
       text-decoration: none;
       color: #7d4831;
       font-weight: bold;
-      font-size: 200;
+      font-size: 1rem;
       transition: color 0.2s;
     }
 
     .top-nav a:hover {
       color: #555;
+    }
+
+    .top-image-link {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .top-image {
+      width: 40px;
+      height: auto;
+      transition: transform 0.2s;
+    }
+
+    .top-image:hover {
+      transform: scale(1.1);
     }
 
     .logo-text {
@@ -136,22 +129,25 @@
 <body>
 
   <header>
-  <div class="top-left">
-    <div class="sweetobox-name">SweettoBox <span style="font-family: sans-serif;">♡</span></div>
-  </div>
     <nav class="top-nav">
       <a href="shop.html">Shop</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="cart.html">Cart</a>
     </nav>
+
+    <!-- Clickable top-right image -->
+    <a href="index.html" class="top-image-link">
+      <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png" alt="Home Icon" class="top-image" />
+    </a>
+
     <div class="logo-text">SWEETOBOX</div>
     <div class="subtext">MADE WITH LOVE</div>
   </header>
 
   <main>
     <img class="main-logo" src="https://static.vecteezy.com/system/resources/thumbnails/032/325/019/small_2x/generative-ai-fresh-croissant-at-home-interior-aesthetic-muted-colors-french-bakery-photo.jpg" alt="cookie bag" />
-
+    <div class="sweetobox-name">Sweetobox <span style="font-family: sans-serif;">♡</span></div>
 
     <a class="btn" href="shop.html">Shop</a>
     <a class="btn" href="about.html">About</a>
@@ -175,4 +171,5 @@
 
 </body>
 </html>
+
 
