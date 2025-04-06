@@ -12,13 +12,31 @@
       text-align: center;
       margin: 0;
       padding: 0;
-      min-height: 350vh; /* 👈 This adds vertical height */
-
     }
 
     header {
       background: linear-gradient(to bottom, #ccc, #f7f4f1);
       padding: 30px 20px 10px;
+      position: relative;
+    }
+
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .top-nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .top-nav a:hover {
+      color: #555;
     }
 
     .logo-text {
@@ -93,6 +111,11 @@
 <body>
 
   <header>
+    <nav class="top-nav">
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
     <div class="subtext">home bakery</div>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Bow_font_awesome.svg/1200px-Bow_font_awesome.svg.png" alt="bow icon" width="50" />
     <div class="logo-text">SWEETOBOX</div>
@@ -103,10 +126,10 @@
     <img class="main-logo" src="https://static.vecteezy.com/system/resources/thumbnails/032/325/019/small_2x/generative-ai-fresh-croissant-at-home-interior-aesthetic-muted-colors-french-bakery-photo.jpg" alt="cookie bag" />
     <div class="sweetobox-name">Sweetobox <span style="font-family: sans-serif;">♡</span></div>
 
-    <a class="btn" href="#">Shop</a>
-    <a class="btn" href="#">About</a>
-    <a class="btn" href="#">Contact</a>
-    <a class="btn" href="#">Cart</a>
+    <a class="btn" href="shop.html">Shop</a>
+    <a class="btn" href="about.html">About</a>
+    <a class="btn" href="contact.html">Contact</a>
+    <a class="btn" href="cart.html">Cart</a>
   </main>
 
   <footer>
@@ -125,3 +148,4 @@
 
 </body>
 </html>
+
