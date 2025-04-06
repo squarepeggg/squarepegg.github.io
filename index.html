@@ -128,24 +128,23 @@
     margin-bottom: 30px;
   }
 
-  .section-2 .section-2-content {
+  .section-2-content {
     display: flex;
-    align-items: right;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-    max-width: 1200px; /* Limit maximum width */
-    margin: 0 auto; /* Center horizontally */
+    align-items: center;   /* Vertically centers items */
+    justify-content: center; /* Centers items horizontally */
+    gap: 60px;             /* Space between image and text */
+    max-width: 1200px;     /* Prevents overly wide layouts */
+    margin: 0 auto;        /* Centers container */
+    padding: 20px;
   }
 
   .section-2 .cookie-img {
-    max-width: 45%;
-    height: auto;
+    width: 100%;       /* Responsive width (respects max-width) */
+    max-width: 400px;  /* Limits maximum size */
+    height: auto;      /* Maintains aspect ratio */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    object-fit: cover; /* Ensures image fills container nicely */
-    order: -1; /* Forces image to appear first (left) */
-
+    object-fit: cover; /* Prevents distortion */
   }
 
   .section-2 .cookie-text {
