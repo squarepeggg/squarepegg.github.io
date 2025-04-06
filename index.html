@@ -112,7 +112,61 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    .section-2,
+  .section-2 {
+    height: 33.33vh;
+    background-color: #e8e6e3;
+    padding: 40px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 30px;
+  }
+
+  .section-2-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .cookie-img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .cookie-text {
+    max-width: 45%;
+    font-family: Georgia, serif;
+    color: #333;
+  }
+
+  .cookie-text h3 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .cookie-text hr {
+    border: none;
+    border-top: 2px solid #444;
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .cookie-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
     .section-3 {
       background-color: #e9e6e2;
       display: flex;
@@ -183,7 +237,18 @@ Welcome to my cozy little home bakery, where every treat
   </section>
 
   <section class="section section-2">
-    Coming Soon: Our Full Menu 🍪
+  <h2 class="section-heading">Explore what we offer🍪</h2>
+  <div class="section-two-content">
+    <img src="https://i.imgur.com/Wsl9Epj.jpg" alt="Cookie Image" class="cookie-img"/>
+    <div class="cookie-text">
+      <h3>Cookie Cravings</h3>
+      <hr />
+      <p>
+      Description of ur cookies
+      </p>
+    </div>
+  </div>
+
   </section>
 
   <section class="section section-3">
